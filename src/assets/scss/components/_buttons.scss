@@ -1,0 +1,10 @@
+%btn-accent {
+    color: $accent;
+}
+
+%link {
+    transition: .3s all;
+    &:hover {
+        color: #81C230;
+    }
+}

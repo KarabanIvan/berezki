@@ -1,0 +1,331 @@
+<%= require('@parts/header.ejs')({title: 'Frontpage' }) %>
+
+  <main class="homepage" id="root">
+        <section class="order">
+            <div class="container">
+                <div class="order__content">
+                    <div class="order__header">
+                        <h2 class="order__title">
+                            Оформление заказа
+                        </h2>
+                        <div class="order__status">
+                            <span class="order__status-item order__status-item_1">
+                                Контактные данные
+                            </span>
+                            <span class="order__status-item order__status-item_2">
+                                Способ доставки 
+                            </span>
+                            <span class="order__status-item order__status-item_3">
+                                Способ оплаты 
+                            </span>
+                        </div>
+                    </div>
+                    <form class="order__form">
+                        <div class="order__block order__block_1 active">
+                            <h3 class="order__block-title">
+                                Контактные данные
+                            </h3>
+                            <div class="order__row">
+                                <div class="order__group order__group_6">
+                                    <span class="order__label">
+                                        Фамилия и Имя
+                                    </span>
+                                    <input type="text" class="order__input" placeholder="Ваше имя">
+                                </div>
+                                <div class="order__group order__group_6">
+                                    <span class="order__label">
+                                        Email
+                                    </span>
+                                    <input type="email" class="order__input" placeholder="Ваш email">
+                                </div>
+                                <div class="order__group order__group_6">
+                                    <span class="order__label">
+                                        Телефон
+                                    </span>
+                                    <input type="tel" class="order__input" placeholder="Ваш телефон">
+                                </div>
+                                <div class="order__group order__group_6">
+                                    <span class="order__label">
+                                        Кто получатель?
+                                    </span>
+                                    <div class="order__radio">
+                                        <div class="order__radio-item">
+                                            <input type="radio" name="get" checked id="get-1">
+                                            <label for="get-1">Я</label>
+                                        </div>
+                                        <div class="order__radio-item">
+                                            <input type="radio" name="get" id="get-2">
+                                            <label for="get-2">Другой человек</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order__group order__group_6 order__group_btns1">
+                                    <button class="order__next order__next_1" type="button">
+                                        <i>
+                                            <svg width="32" height="20" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M21 1L30 10L21 19" stroke="white" stroke-width="2"/>
+                                                <path d="M0 10L30 10" stroke="white" stroke-width="2"/>
+                                            </svg>                                            
+                                        </i>
+                                        далее
+                                    </button>
+                                </div>
+                                <div class="order__group order__group_6">
+                                    <div class="order__promo">
+                                        <span class="order__promo-label">
+                                            Промо-код
+                                        </span>
+                                        <textarea class="order__promo-textarea"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order__block order__block_2">
+                            <h3 class="order__block-title">
+                                Способ доставки
+                            </h3>
+                            <div class="order__row">
+                                <div class="order__group order__group_12">
+                                    <div class="order__lg">
+                                        <div class="order__lg-item">
+                                            <input type="radio" name="del" checked id="del1">
+                                            <label for="del1" class="order__lg-label order-lg">
+                                                <p class="order-lg__name">
+                                                    Самовывоз из пункта выдачи
+                                                </p>
+                                                <div class="order-lg__group">
+                                                    <p class="order-lg__time">
+                                                        Забрать 4 марта с 14:00 
+                                                    </p>
+                                                    <p class="order-lg__price">
+                                                        Бесплатно
+                                                    </p>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="order__lg-item">
+                                            <input type="radio" name="del" id="del2">
+                                            <label for="del2" class="order__lg-label order-lg">
+                                                <p class="order-lg__name">
+                                                    Доставка ТК СДЭК
+                                                </p>
+                                                <div class="order-lg__group">
+                                                    <p class="order-lg__time">
+                                                        Отправка завтра
+                                                    </p>
+                                                    <p class="order-lg__price">
+                                                        от 500 руб.
+                                                    </p>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order__group order__group_6">
+                                    <span class="order__label">
+                                        Выберите город
+                                    </span>
+                                    <select class="order__select select-init">
+                                        <option value="">Москва</option>
+                                        <option value="">Самара</option>
+                                        <option value="">Пермь</option>
+                                    </select>
+                                </div>
+                                <div class="order__group order__group_6">
+                                    <span class="order__label">
+                                        Выберите пункт выдачи
+                                    </span>
+                                    <select class="order__select select-init">
+                                        <option value="">Мытная улица, 46/2с1</option>
+                                        <option value="">Мытная улица, 26/2с1</option>
+                                        <option value="">Мытная улица, 16/4с1</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="order__btns2">
+                                <button class="order__back order__back_2" type="button">
+                                    <i>
+                                        <svg width="32" height="20" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1L2 10L11 19" stroke="#7FC723" stroke-width="2"/>
+                                            <path d="M32 10L2 10" stroke="#7FC723" stroke-width="2"/>
+                                        </svg>                                            
+                                    </i>
+                                    назад
+                                </button>
+                                <button class="order__next order__next_2" type="button">
+                                    <i>
+                                        <svg width="32" height="20" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21 1L30 10L21 19" stroke="white" stroke-width="2"/>
+                                            <path d="M0 10L30 10" stroke="white" stroke-width="2"/>
+                                        </svg>                                            
+                                    </i>
+                                    далее
+                                </button>
+                            </div>
+                        </div>
+                        <div class="order__block order__block_3">
+                            <h3 class="order__block-title">
+                                Способ оплаты
+                            </h3>
+                            <div class="order__row">
+                                <div class="order__group order__group_12">
+                                    <div class="order__lg">
+                                        <div class="order__lg-item">
+                                            <input type="radio" name="pay" checked id="pay1">
+                                            <label for="pay1" class="order__lg-label order-lg">
+                                                <p class="order-lg__name">
+                                                    Оплата банковской картой
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="order__lg-item">
+                                            <input type="radio" name="pay" id="pay2">
+                                            <label for="pay2" class="order__lg-label order-lg">
+                                                <p class="order-lg__name">
+                                                    Доставка ТК СДЭК
+                                                </p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order__btns3">
+                                <button class="order__back order__back_3" type="button">
+                                    <i>
+                                        <svg width="32" height="20" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 1L2 10L11 19" stroke="#7FC723" stroke-width="2"/>
+                                            <path d="M32 10L2 10" stroke="#7FC723" stroke-width="2"/>
+                                        </svg>                                            
+                                    </i>
+                                    назад
+                                </button>
+                                <button class="order__submit">
+                                    <i>
+                                        <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="35" cy="35" r="35" fill="#7FC723"/>
+                                            <g clip-path="url(#clip0_532_16)">
+                                            <path d="M54.886 23.2087C54.8603 23.0935 54.8065 22.9824 54.6822 22.888C53.5493 22.0221 50.871 18.5304 49.1119 19.1093C46.6581 19.9177 33.1679 37.0523 30.1774 40.8286C29.1331 39.3878 20.4347 27.8685 19.9983 28.1268C18.5034 29.0087 16.9605 29.7627 15.5328 30.7581C15.3729 30.8701 15.2909 31.0148 15.2669 31.1627C15.0715 31.3098 14.9464 31.5537 15.0226 31.8519C16.2483 36.6573 20.4157 40.4416 23.3921 44.2267C25.1205 46.4247 27.5305 51.9577 30.7795 49.3455C30.835 49.3007 30.8681 49.2496 30.9045 49.1976C31.5422 48.9465 32.088 48.458 32.6594 47.8631C35.1357 45.2885 37.3154 42.4597 39.6128 39.7316C42.0683 36.8148 44.7922 34.0843 47.4895 31.3914C49.8449 29.0399 51.9368 25.9264 54.7129 24.0874C55.0591 23.8563 55.0599 23.4749 54.886 23.2087ZM22.8215 31.688C22.0431 31.0236 21.2364 30.3775 20.3942 29.7555C21.3018 30.2984 22.1027 30.9516 22.8215 31.688ZM19.089 32.2397C18.9225 32.0878 18.7362 32.0566 18.5664 32.0942C18.4595 31.8063 18.3709 31.5169 18.3229 31.2299C18.2914 31.0444 18.197 30.9076 18.0744 30.8157C18.1241 30.7797 18.1705 30.7437 18.2219 30.7085C18.231 30.8421 18.2807 30.9756 18.3858 31.0971C20.2666 33.2456 22.3859 35.1629 24.2982 37.2825C24.5176 37.5264 24.7321 37.7727 24.9475 38.0173C22.9159 36.1592 21.1246 34.0875 19.089 32.2397ZM26.7098 46.5838C26.8995 46.7949 27.0883 47.0068 27.2821 47.2139C27.5065 47.5097 27.7334 47.8056 27.9678 48.0974C27.9686 48.1006 27.9695 48.1046 27.9703 48.107C27.5107 47.7072 27.0883 47.1427 26.7098 46.5838ZM27.3185 41.8992C27.8759 42.3741 28.4589 42.8267 29.0718 43.1897C29.0569 43.284 29.0643 43.376 29.0883 43.4647C29.0958 43.5039 29.1123 43.5431 29.1281 43.5815C28.5426 43.0058 27.9322 42.4517 27.3185 41.8992ZM30.0291 48.0726C30.0275 48.067 30.0283 48.0614 30.0258 48.0574C30.0059 48.0134 29.9828 47.9743 29.9629 47.9311C30.531 47.9247 31.2747 47.5177 32.0913 46.8837C31.37 47.5409 30.6569 48.0039 30.0291 48.0726ZM49.3794 20.6445C48.8494 20.8675 48.408 21.2114 48.0129 21.6151C48.4038 21.0762 48.8179 20.6621 49.3794 20.6445ZM36.2653 37.2258C35.9489 37.5464 35.3825 38.0317 34.6992 38.6266C35.303 38.0437 35.9291 37.4896 36.4914 36.9363C38.3258 35.1357 39.7461 32.9273 41.2269 30.8165C42.9064 29.2254 44.6464 27.711 46.2514 26.0383C47.3073 24.9365 47.9575 23.1703 49.1923 22.2292C48.3691 23.0671 47.7189 24.2777 47.1641 25.441C46.2837 26.3365 45.5052 27.3488 44.6887 28.3291C42.0956 31.4457 39.1134 34.3402 36.2653 37.2258ZM47.1119 29.7739C45.8059 31.3018 44.34 32.6931 42.9462 34.1451C43.998 32.8722 45.0423 31.5929 46.0013 30.2448C46.0767 30.1385 46.1678 29.9889 46.268 29.8058C46.6051 29.4804 46.9421 29.1558 47.2726 28.8248C48.2299 27.8621 49.3678 26.8043 50.066 25.573C50.6234 24.8494 51.2337 24.1314 51.9236 23.6996C50.924 25.8896 48.4999 28.1515 47.1119 29.7739Z" fill="white"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_532_16">
+                                            <rect width="40" height="31" fill="white" transform="translate(15 19)"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>                                                                                      
+                                    </i>
+                                    подтвердить заказ
+                                </button>
+                                <p class="order__info">
+                                    Подтверждая заказ, я соглашаюсь с <a href="">политикой конфиденциальности</a>
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="order__list">
+                    <div class="order__list-content">
+                        <h2 class="order__list-title">
+                            Товары в корзине
+                            <span class="order__list-count">
+                                4 товара
+                            </span>
+                        </h2>
+                        <div class="order__list-wrapper">
+                            <div class="order__list-item order-item">
+                                <div class="order-item__group">
+                                    <div class="order-item__img">
+                                        <img src="<%=require('@img/order-img.png') %>" alt="">
+                                        <span class="order-item__hit">
+                                            Хит
+                                        </span>
+                                    </div>
+                                    <p class="order-item__name">
+                                        Казань ты моя царица
+                                        <span class="order-item__category">
+                                            футболка
+                                        </span>
+                                    </p>
+                                </div>
+                                <p class="order-item__price">
+                                    1290 руб.
+                                </p>
+                            </div>
+                            <div class="order__list-item order-item">
+                                <div class="order-item__group">
+                                    <div class="order-item__img">
+                                        <img src="<%=require('@img/order-img.png') %>" alt="">
+                                        <span class="order-item__hit">
+                                            Хит
+                                        </span>
+                                    </div>
+                                    <p class="order-item__name">
+                                        Казань ты моя царица
+                                        <span class="order-item__category">
+                                            футболка
+                                        </span>
+                                    </p>
+                                </div>
+                                <p class="order-item__price">
+                                    1290 руб.
+                                </p>
+                            </div>
+                            <div class="order__list-item order-item">
+                                <div class="order-item__group">
+                                    <div class="order-item__img">
+                                        <img src="<%=require('@img/order-img.png') %>" alt="">
+                                        <span class="order-item__hit">
+                                            Хит
+                                        </span>
+                                    </div>
+                                    <p class="order-item__name">
+                                        Казань ты моя царица
+                                        <span class="order-item__category">
+                                            футболка
+                                        </span>
+                                    </p>
+                                </div>
+                                <p class="order-item__price">
+                                    1290 руб.
+                                </p>
+                            </div>
+                            <div class="order__list-item order-item">
+                                <div class="order-item__group">
+                                    <div class="order-item__img">
+                                        <img src="<%=require('@img/order-img.png') %>" alt="">
+                                        <span class="order-item__hit">
+                                            Хит
+                                        </span>
+                                    </div>
+                                    <p class="order-item__name">
+                                        Казань ты моя царица
+                                        <span class="order-item__category">
+                                            футболка
+                                        </span>
+                                    </p>
+                                </div>
+                                <p class="order-item__price">
+                                    1290 руб.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order__list-footer">
+                        <a href="" class="order__list-back">
+                            <i>
+                                <svg width="32" height="20" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 1L2 10L11 19" stroke="#7FC723" stroke-width="2"/>
+                                    <path d="M32 10L2 10" stroke="#7FC723" stroke-width="2"/>
+                                </svg>                                        
+                            </i>
+                            редактировать заказ
+                        </a>
+                        <p class="order__list-finish">
+                            <span>Итого:</span> 9 564 руб.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+  </main>
+
+  <%= require('@parts/footer.ejs')() %>
